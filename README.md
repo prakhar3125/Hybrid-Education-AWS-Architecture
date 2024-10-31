@@ -1,4 +1,5 @@
-# VIT Hybrid Learning Platform
+# Hybrid Education AWS Architecture
+
 A scalable AWS infrastructure for VIT University's hybrid learning platform using CloudFormation.
 
 ![image](https://github.com/user-attachments/assets/4bcbd2be-915c-4772-a96c-d3891cbd1715)
