@@ -1,0 +1,30 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'VIT University Hybrid Learning Platform Infrastructure - Main Template'
+
+Parameters:
+  EnvironmentName:
+    Type: String
+    Default: Production
+    Description: Environment name for the deployment
+
+Resources:
+  NetworkStack:
+    Type: AWS::CloudFormation::Stack
+    Properties:
+      TemplateURL: ./network.yaml
+      Parameters:
+        EnvironmentName: !Ref EnvironmentName
+
+  StorageStack:
+    Type: AWS::CloudFormation::Stack
+    Properties:
+      TemplateURL: ./storage.yaml
+      Parameters:
+        EnvironmentName: !Ref EnvironmentName
+
+  ComputeStack:
+    Type: AWS::CloudFormation::Stack
+    Properties:
+      TemplateURL: ./compute.yaml
+      Parameters:
+        EnvironmentName: !Ref EnvironmentName
