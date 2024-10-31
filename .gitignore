@@ -1,0 +1,14 @@
+# IDE files
+.idea/
+.vscode/
+*.swp
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+venv/
+
+# AWS
+.aws/
